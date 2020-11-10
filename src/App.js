@@ -37,42 +37,42 @@ const App = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route
-            path='/'
-            render={() => <Redirect to='/news' />}
+            path="/"
+            render={() => <Redirect to="/news" />}
             exact={true}
           />
-          <Route path='/news' component={News} />
-          <Route path='/trending' component={Trending} />
-          <Route path='/submit' component={Submit} />
-          <Route path='/search' component={Search} />
-          <Route path='/profile' component={Profile} />
-          <Route component={() => <Redirect to='/news' />} />
+          <Route path="/news" component={News} />
+          <Route path="/trending" component={Trending} />
+          <Route path="/submit" component={Submit} />
+          <Route path="/search" component={Search} />
+          <Route path="/profile" component={Profile} />
+          <Route component={() => <Redirect to="/news" />} />
         </IonRouterOutlet>
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="news" href="/news">
+            <IonIcon icon={newspaperOutline} />
+            <IonLabel>Newsy</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="trending" href="/trending">
+            <IonIcon icon={trendingUpOutline} />
+            <IonLabel>Trending</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="submit" href="/submit">
+            <IonIcon icon={createOutline} />
+            <IonLabel>Submit</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="search" href="/search">
+            <IonIcon icon={searchOutline} />
+            <IonLabel>Search</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="profile" href="/profile">
+            <IonIcon icon={personCircleOutline} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
       </IonTabs>
-      <IonTabBar slot="bottom">
-        <IonTabButton tab="news" href="/news">
-          <IonIcon icon={newspaperOutline} />
-          <IonLabel>Newsy</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="trending" href="/trending">
-          <IonIcon icon={trendingUpOutline} />
-          <IonLabel>Trending</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="submit" href="/submit">
-          <IonIcon icon={createOutline} />
-          <IonLabel>Submit</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="search" href="/search">
-          <IonIcon icon={searchOutline} />
-          <IonLabel>Search</IonLabel>
-        </IonTabButton>
-        <IonTabButton tab="profile" href="/profile">
-          <IonIcon icon={personCircleOutline} />
-          <IonLabel>Profile</IonLabel>
-        </IonTabButton>
-      </IonTabBar>
     </IonReactRouter>
   </IonApp>
-);
+)
 
 export default App;
