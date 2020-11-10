@@ -1,10 +1,15 @@
+import { IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
 import React from 'react'
 
 const Profile = () => {
     return (
-        <div>
-            Profile
-        </div>
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <IonTitle>Profile</IonTitle>
+                </IonToolbar>
+            </IonHeader>
+        </IonPage>
     )
 }
 

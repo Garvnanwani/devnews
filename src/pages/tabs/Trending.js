@@ -1,10 +1,15 @@
+import { IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
 import React from 'react'
 
 const Trending = () => {
     return (
-        <div>
-            Trending
-        </div>
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <IonTitle>Trending</IonTitle>
+                </IonToolbar>
+            </IonHeader>
+        </IonPage>
     )
 }
 
