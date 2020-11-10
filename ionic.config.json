@@ -1,0 +1,7 @@
+{
+  "name": "devnews",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
