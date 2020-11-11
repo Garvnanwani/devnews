@@ -28,10 +28,12 @@ import Profile from './pages/tabs/Profile';
 import Search from './pages/tabs/Search';
 import Submit from "./pages/tabs/Submit";
 import Trending from "./pages/tabs/Trending";
+import { AuthProvider } from './contexts/AuthContext'
 /* Theme variables */
 import './theme/variables.css';
 
 const App = () => (
+  <AuthProvider>
   <IonApp>
     <IonReactRouter>
       <IonTabs>
@@ -73,6 +75,7 @@ const App = () => (
       </IonTabs>
     </IonReactRouter>
   </IonApp>
+  </AuthProvider>
 )
 
 export default App;
